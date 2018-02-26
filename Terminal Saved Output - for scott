@@ -1,0 +1,175 @@
+Last login: Fri Feb 23 14:58:17 on ttys001
+Debjits-iMac:~ debjit$ cd ~/Development/
+Debjits-iMac:Development debjit$ mkdir scott-thinkful
+Debjits-iMac:Development debjit$ cd scott-thinkful/
+Debjits-iMac:scott-thinkful debjit$ git clone https://github.com/str007/Thinkful.git
+Cloning into 'Thinkful'...
+remote: Counting objects: 47, done.
+remote: Compressing objects: 100% (44/44), done.
+remote: Total 47 (delta 13), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (47/47), done.
+Debjits-iMac:scott-thinkful debjit$ ls
+Thinkful
+Debjits-iMac:scott-thinkful debjit$ cd Thinkful/
+Debjits-iMac:Thinkful debjit$ ls
+Bayes Drill.ipynb
+Central Limit Theorem Drill.ipynb
+Describing Data Drill-2.ipynb
+Descriptive Statistics and Normality Drill.ipynb
+Evaluating Data Sources.ipynb
+Exercises in Probability.ipynb
+Fundamental Phase - Capstone Analytic Report & Research Proposal-2.ipynb
+Monty Hall Challenge.ipynb
+README.md
+Unit 2 Plot Challenge.ipynb
+Debjits-iMac:Thinkful debjit$ cp Fundamental\ Phase\ -\ Capstone\ Analytic\ Report\ \&\ Research\ Proposal-2.ipynb Fundamental\ Phase\ -\ Capstone\ Analytic\ Report\ \&\ Research\ Proposal-2-debjit.ipynb 
+Debjits-iMac:Thinkful debjit$ la
+-bash: la: command not found
+Debjits-iMac:Thinkful debjit$ ls
+Bayes Drill.ipynb
+Central Limit Theorem Drill.ipynb
+Describing Data Drill-2.ipynb
+Descriptive Statistics and Normality Drill.ipynb
+Evaluating Data Sources.ipynb
+Exercises in Probability.ipynb
+Fundamental Phase - Capstone Analytic Report & Research Proposal-2-debjit.ipynb
+Fundamental Phase - Capstone Analytic Report & Research Proposal-2.ipynb
+Monty Hall Challenge.ipynb
+README.md
+Unit 2 Plot Challenge.ipynb
+Debjits-iMac:Thinkful debjit$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.ipynb_checkpoints/
+	Fundamental Phase - Capstone Analytic Report & Research Proposal-2-debjit.ipynb
+
+nothing added to commit but untracked files present (use "git add" to track)
+Debjits-iMac:Thinkful debjit$ git add Fundamental\ Phase\ -\ Capstone\ Analytic\ Report\ \&\ Research\ Proposal-2-debjit.ipynb 
+Debjits-iMac:Thinkful debjit$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   Fundamental Phase - Capstone Analytic Report & Research Proposal-2-debjit.ipynb
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.ipynb_checkpoints/
+
+Debjits-iMac:Thinkful debjit$ git commit -m "Adding debjit's changes"
+[master b4baa63] Adding debjit's changes
+ Committer: Debjit Ghosh <debjit@Debjits-iMac.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1584 insertions(+)
+ create mode 100644 Fundamental Phase - Capstone Analytic Report & Research Proposal-2-debjit.ipynb
+Debjits-iMac:Thinkful debjit$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 279.01 KiB | 10.73 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/str007/Thinkful.git
+   b04816d..b4baa63  master -> master
+Debjits-iMac:Thinkful debjit$ pwd
+/Users/debjit/Development/scott-thinkful/Thinkful
+Debjits-iMac:Thinkful debjit$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Fundamental Phase - Capstone Analytic Report & Research Proposal-2-debjit.ipynb
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.ipynb_checkpoints/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Debjits-iMac:Thinkful debjit$ git add Fundamental\ Phase\ -\ Capstone\ Analytic\ Report\ \&\ Research\ Proposal-2-debjit.ipynb 
+Debjits-iMac:Thinkful debjit$ git commit -m "More changes by debjit"
+[master fb47835] More changes by debjit
+ Committer: Debjit Ghosh <debjit@Debjits-iMac.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+Debjits-iMac:Thinkful debjit$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 351 bytes | 351.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/str007/Thinkful.git
+   b4baa63..fb47835  master -> master
+Debjits-iMac:Thinkful debjit$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Fundamental Phase - Capstone Analytic Report & Research Proposal-2-debjit.ipynb
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.ipynb_checkpoints/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Debjits-iMac:Thinkful debjit$ git add Fundamental\ Phase\ -\ Capstone\ Analytic\ Report\ \&\ Research\ Proposal-2-debjit.ipynb 
+Debjits-iMac:Thinkful debjit$ git commit -m "Final changes made by debjit"
+[master db2196e] Final changes made by debjit
+ Committer: Debjit Ghosh <debjit@Debjits-iMac.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+Debjits-iMac:Thinkful debjit$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 349 bytes | 349.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/str007/Thinkful.git
+   fb47835..db2196e  master -> master
+Debjits-iMac:Thinkful debjit$ 
